@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciofacturaApplication<microserviciofactura>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciofactura.MicroserviciofacturaApplication",
+            "projectName": "microserviciofactura",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

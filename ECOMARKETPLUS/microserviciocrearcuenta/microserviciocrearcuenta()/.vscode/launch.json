@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciocrearcuentaApplication<microserviciocrearcuenta>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciocrearcuenta.MicroserviciocrearcuentaApplication",
+            "projectName": "microserviciocrearcuenta",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

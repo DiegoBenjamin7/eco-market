@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioreporteApplication<microservicioreporte>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioreporte.MicroservicioreporteApplication",
+            "projectName": "microservicioreporte",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

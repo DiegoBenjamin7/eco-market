@@ -1,0 +1,168 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioproductoApplication<microservicioproducto>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioproducto.MicroservicioproductoApplication",
+            "projectName": "microservicioproducto",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52790 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioproducto"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicionotificacionApplication<microservicionotificacion>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicionotificacion.MicroservicionotificacionApplication",
+            "projectName": "microservicionotificacion",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53594 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicionotificacion"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioventaApplication<microservicioventa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioventa.MicroservicioventaApplication",
+            "projectName": "microservicioventa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52518 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioventa"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciofacturaApplication<microserviciofactura>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciofactura.MicroserviciofacturaApplication",
+            "projectName": "microserviciofactura",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55502 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microserviciofactura"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciopagoApplication<microserviciopago>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciopago.MicroserviciopagoApplication",
+            "projectName": "microserviciopago",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55017 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microserviciopago"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciorutaApplication<microservicioruta>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioruta.MicroserviciorutaApplication",
+            "projectName": "microservicioruta",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52218 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioruta"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioreporteApplication<microservicioreporte>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioreporte.MicroservicioreporteApplication",
+            "projectName": "microservicioreporte",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52162 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioreporte"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioproveedoresApplication<microservicioproveedores>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioproveedores.MicroservicioproveedoresApplication",
+            "projectName": "microservicioproveedores",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioproveedores"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioordenApplication<microservicioorden>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioorden.MicroservicioordenApplication",
+            "projectName": "microservicioorden",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51931 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioorden"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciologinApplication<microserviciologin>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciologin.MicroserviciologinApplication",
+            "projectName": "microserviciologin",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51772 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microserviciologin"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioinventarioApplication<microservicioinventario>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioinventario.MicroservicioinventarioApplication",
+            "projectName": "microservicioinventario",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51669 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioinventario"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioenvioApplication<microservicioenvio>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioenvio.MicroservicioenvioApplication",
+            "projectName": "microservicioenvio",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51230 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservicioenvio"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciocrearcuentaApplication<microserviciocrearcuenta>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciocrearcuenta.MicroserviciocrearcuentaApplication",
+            "projectName": "microserviciocrearcuenta",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51180 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microserviciocrearcuenta"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciousuarioApplication<microserviciousuario>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microserviciousuario.MicroserviciousuarioApplication",
+            "projectName": "microserviciousuario",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52370 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microserviciousuario"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RespuestasycomentariosApplication<respuestasycomentarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.respuestasycomentarios.RespuestasycomentariosApplication",
+            "projectName": "respuestasycomentarios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioordenApplication<microservicioorden>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.padima.microservicioorden.MicroservicioordenApplication",
+            "projectName": "microservicioorden",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
