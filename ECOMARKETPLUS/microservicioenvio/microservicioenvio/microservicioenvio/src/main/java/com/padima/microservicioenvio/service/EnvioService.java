@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
 @Service
 @Transactional
 public class EnvioService {
@@ -18,14 +17,12 @@ public class EnvioService {
 
     // ===== CRUD BÁSICO =====
     public Envio crearEnvio(Envio envio) {
-        // Validación de código único (si aplica)
-        if (envio.getCodigoEnvio() != null && 
-            envioRepository.existsByCodigoEnvio(envio.getCodigoEnvio())) {
-            throw new RuntimeException("El código de envío ya existe");
-        }
-        return envioRepository.save(envio);
+    if (envioRepository.existsByCodigoEnvio(envio.getCodigoEnvio())) {
+        throw new IllegalStateException("El código de envío ya existe");
     }
-
+    envio.setEstado("PREPARACION");
+    return envioRepository.save(envio);
+}
     public Optional<Envio> buscarEnvioPorId(Long id) {
         return envioRepository.findById(id);
     }

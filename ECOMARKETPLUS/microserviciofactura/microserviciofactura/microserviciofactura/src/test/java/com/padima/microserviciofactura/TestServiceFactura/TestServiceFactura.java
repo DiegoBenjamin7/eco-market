@@ -4,6 +4,7 @@ import com.padima.microserviciofactura.assembler.FacturaAssembler;
 import com.padima.microserviciofactura.controller.FacturaController;
 import com.padima.microserviciofactura.dto.FacturaDTO;
 import com.padima.microserviciofactura.model.Factura;
+import com.padima.microserviciofactura.model.Factura.FacturaStatus; // Importar FacturaStatus
 import com.padima.microserviciofactura.repository.FacturaRepository;
 import com.padima.microserviciofactura.service.FacturaService;
 
@@ -15,10 +16,10 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
+import java.time.LocalDateTime; // Importar LocalDateTime
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -42,9 +43,10 @@ class FacturaControllerTest {
         testFacturaDTO.setId(1L);
         testFacturaDTO.setCustomerId("CUST-001");
         testFacturaDTO.setProductIds(Arrays.asList("PROD-001", "PROD-002"));
-        testFacturaDTO.setIssueDate(LocalDateTime.parse("2023-10-15T14:30:00"));
-        testFacturaDTO.setStatus(Factura.FacturaStatus.PAID);
-        testFacturaDTO.setStatus("PAID");
+        testFacturaDTO.setTotalAmount(150.75);
+        // CORRECCIÓN: Asignar LocalDateTime y FacturaStatus correctamente
+        testFacturaDTO.setIssueDate(LocalDateTime.of(2023, 10, 15, 14, 30, 0));
+        testFacturaDTO.setStatus(FacturaStatus.PAID);
     }
 
     @Test
@@ -56,7 +58,8 @@ class FacturaControllerTest {
         // Act
         ResponseEntity<FacturaDTO> response = facturaController.createFactura(testFacturaDTO);
 
-        assertEquals(200, response.getStatusCode().value());        assertEquals(200, response.getStatusCodeValue());
+        // Assert
+        assertEquals(200, response.getStatusCodeValue());
         assertEquals(testFacturaDTO, response.getBody());
         verify(facturaService, times(1)).createFactura(any(FacturaDTO.class));
     }
@@ -116,6 +119,8 @@ class FacturaControllerTest {
         // Act
         ResponseEntity<Void> response = facturaController.deleteFactura(1L);
 
-        // Assert        assertEquals(204, response.getStatusCodeValue());
-        assertEquals(204, response.getStatusCode().value());cturaService, times(1)).deleteFactura(1L);}
+        // Assert
+        assertEquals(204, response.getStatusCodeValue());
+        verify(facturaService, times(1)).deleteFactura(1L);
+    }
 }
